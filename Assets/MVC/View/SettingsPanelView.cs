@@ -29,8 +29,6 @@ namespace DynamicBox.UIViews {
             shopPanel.SetActive(false);
             progressPanel.SetActive(false);
             panelText.SetText("Settings");
-    
-
     }
         public void ShowShop()
         {
@@ -79,20 +77,20 @@ namespace DynamicBox.UIViews {
         {
             LocalizationSettings.SelectedLocale = locale;
         }
-        public void settoEng()
+        public void setLanguage(int index)
         {
-            SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[0]);
-            currentLanguage.SetText("English >");
+            SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[index]);
+            
         }
-        public void settoAz()
-        {
-            SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[1]);
-            currentLanguage.SetText("Azerbaijani >");
-        }
-        public void settoTr()
-        {
-            SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[2]);
-            currentLanguage.SetText("Turkish >");
-        }
+        //public void settoAz()
+        //{
+        //    SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[1]);
+        //    currentLanguage.SetText("Azerbaijani >");
+        //}
+        //public void settoTr()
+        //{
+        //    SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[2]);
+        //    currentLanguage.SetText("Turkish >");
+        //}
     }
 }

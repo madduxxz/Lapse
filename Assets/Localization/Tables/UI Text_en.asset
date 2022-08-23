@@ -38,5 +38,9 @@ MonoBehaviour:
     m_Localized: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 78919200989184
+    m_Localized: 'English > '
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

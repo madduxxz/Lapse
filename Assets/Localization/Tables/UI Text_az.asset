@@ -38,5 +38,9 @@ MonoBehaviour:
     m_Localized: Dil
     m_Metadata:
       m_Items: []
+  - m_Id: 78919200989184
+    m_Localized: Azerbaijani >
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -41,18 +41,18 @@ public class MenuController : MonoBehaviour
     {
         view.ExitButton();
     }
-    public void Eng()
-    {
-        view.settoEng();
-    }
-    public void Az()
-    {
-        view.settoAz();
-    }
-    public void Tr()
-    {
-        view.settoTr();
-    }
+    //public void Eng()
+    //{
+    //    view.settoEng();
+    //}
+    //public void Az()
+    //{
+    //    view.settoAz();
+    //}
+    //public void Tr()
+    //{
+    //    view.settoTr();
+    //}
     public void LanguagePanel()
     {
         view.openLanguagePanel();
