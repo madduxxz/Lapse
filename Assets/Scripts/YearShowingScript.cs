@@ -33,8 +33,6 @@ public class YearShowingScript : MonoBehaviour
         EyePanel.SetActive(true);
         SettingsPanel.SetActive(false);
         RewardPanel.SetActive(false);
-
-
     }
     private void ShowRewardPanel()
     {

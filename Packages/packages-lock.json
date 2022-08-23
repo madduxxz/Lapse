@@ -215,6 +215,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "net.dynamicbox.eventmanagement": {
+      "version": "https://github.com/mechaniqe/event-management.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "793bdc4f5045201f199924149bf4977d37673354"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

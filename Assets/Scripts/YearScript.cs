@@ -23,13 +23,13 @@ public class YearScript : MonoBehaviour
         int currentNonZero = 1;
         while (current < targetVal)
         {
-            // ensure "current" is not getting a value of zero, resulting in an infinite loop
+            
             currentNonZero = (int)(targetVal / (duration / Time.deltaTime));
             if (currentNonZero == 0)
             {
                 currentNonZero = 1;
             }
-            // step by amount that will get us to the target value within the duration
+           
             current += currentNonZero;
             current = Mathf.Clamp(current, 0, targetVal);
             YearText.text = prefix + current;

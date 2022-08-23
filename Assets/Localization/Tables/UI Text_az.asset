@@ -18,23 +18,23 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 11633385472
+  - m_Id: 18524626944
     m_Localized: "T\u0259nziml\u0259m\u0259l\u0259r"
     m_Metadata:
       m_Items: []
-  - m_Id: 13272751759360
-    m_Localized: " Oyun versiyas\u0131                   1.0.0"
+  - m_Id: 89588719616
+    m_Localized: "Oyun versiyas\u0131                  1.0.0"
     m_Metadata:
       m_Items: []
-  - m_Id: 13278590230528
+  - m_Id: 326617227264
     m_Localized: Musiqi
     m_Metadata:
       m_Items: []
-  - m_Id: 13283086524416
+  - m_Id: 397949755392
     m_Localized: "S\u0259s effektl\u0259ri"
     m_Metadata:
       m_Items: []
-  - m_Id: 17160791875584
+  - m_Id: 633602531328
     m_Localized: Dil
     m_Metadata:
       m_Items: []

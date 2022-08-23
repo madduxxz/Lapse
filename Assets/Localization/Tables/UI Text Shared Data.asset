@@ -15,23 +15,23 @@ MonoBehaviour:
   m_TableCollectionName: UI Text
   m_TableCollectionNameGuidString: 4ba1fb730a88ee340b3571dd66aef704
   m_Entries:
-  - m_Id: 11633385472
+  - m_Id: 18524626944
     m_Key: Settings
     m_Metadata:
       m_Items: []
-  - m_Id: 13272751759360
+  - m_Id: 89588719616
     m_Key: Game version
     m_Metadata:
       m_Items: []
-  - m_Id: 13278590230528
+  - m_Id: 326617227264
     m_Key: Music
     m_Metadata:
       m_Items: []
-  - m_Id: 13283086524416
-    m_Key: Sound Effects
+  - m_Id: 397949755392
+    m_Key: Sound
     m_Metadata:
       m_Items: []
-  - m_Id: 17160791875584
+  - m_Id: 633602531328
     m_Key: Language
     m_Metadata:
       m_Items: []
@@ -44,4 +44,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1660921282798
+        m_CustomEpoch: 1661249659185
