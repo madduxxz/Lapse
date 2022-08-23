@@ -8664,7 +8664,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 978971060}
         m_TargetAssemblyTypeName: DynamicBox.UIViews.SettingsPanelView, Assembly-CSharp
-        m_MethodName: ShowProgress
+        m_MethodName: ShowShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

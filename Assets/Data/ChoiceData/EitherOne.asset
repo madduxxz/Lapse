@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: EitherOne
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: Atas
+    characterName: B
     characterIcon: {fileID: 21300000, guid: 67d34a909b67b5f40a7dea6a77d408bd, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
-    characterQuote: 'u sure?
-
-'
+    yearInfo: 0
+    dayInfo: 11
+    characterQuote: B
   nextStates:
     StateQuoteleft: 
     StateQuoteright: 

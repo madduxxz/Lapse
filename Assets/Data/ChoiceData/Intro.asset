@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: Dadas
+    characterName: E
     characterIcon: {fileID: 21300000, guid: f5b298e45fc866941a94760b423763bc, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
-    characterQuote: say yes please
+    yearInfo: 0
+    dayInfo: 0
+    characterQuote: E
   nextStates:
     StateQuoteleft: Yes
     StateQuoteright: No
     nextState1: {fileID: 11400000, guid: 21fe4e71b2a92e94b848b5922248bee5, type: 2}
     nextState2: {fileID: 11400000, guid: 21fe4e71b2a92e94b848b5922248bee5, type: 2}
   choiceEffects:
-    FilledPlant: {fileID: 21300000, guid: 0d93dd0c9fbfd294284a1ed04c11e8a6, type: 3}
-    FilledHuman: {fileID: 21300000, guid: 40880cac005e49b4da20eb3be972e5eb, type: 3}
-    FilledGun: {fileID: 21300000, guid: 67d34a909b67b5f40a7dea6a77d408bd, type: 3}
-    FilledMoney: {fileID: 21300000, guid: 648c4f882b4d08048ab358de61d0ce56, type: 3}
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: LapOtherOne
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: Duds
+    characterName: C
     characterIcon: {fileID: 21300000, guid: 00c28626c13f8c240bd091c2e35e2ec3, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
-    characterQuote: 'haha go brr
+    yearInfo: 0
+    dayInfo: 0
+    characterQuote: 'C
 
 '
   nextStates:
@@ -24,3 +26,8 @@ MonoBehaviour:
     StateQuoteright: olmadiki
     nextState1: {fileID: 11400000, guid: b96800d9f1974944093ff5569199208e, type: 2}
     nextState2: {fileID: 11400000, guid: b96800d9f1974944093ff5569199208e, type: 2}
+  choiceEffects:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
