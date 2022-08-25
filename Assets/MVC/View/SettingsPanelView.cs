@@ -28,7 +28,7 @@ namespace DynamicBox.UIViews {
             settingsPanel.SetActive(true);
             shopPanel.SetActive(false);
             progressPanel.SetActive(false);
-            panelText.SetText("Settings");
+            
     }
         public void ShowShop()
         {
@@ -36,7 +36,7 @@ namespace DynamicBox.UIViews {
             settingsPanel.SetActive(false);
             shopPanel.SetActive(true);
             progressPanel.SetActive(false);
-            panelText.SetText("Active effects");
+            
         }
         public void ShowProgress()
         {
@@ -44,7 +44,7 @@ namespace DynamicBox.UIViews {
             settingsPanel.SetActive(false);
             shopPanel.SetActive(false);
             progressPanel.SetActive(true);
-            panelText.SetText("Progress");
+            
         }
         public void ExitButton()
         {
