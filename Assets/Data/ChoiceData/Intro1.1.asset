@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: Intro
+  m_Name: Intro1.1
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: ?????
     characterIcon: {fileID: 21300000, guid: bad95ccfb8a1ae84984c83c76af87b96, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 0
-    dayInfo: 17
-    characterQuote: 'i knew it! you don''t
-
-      remember anything.'
+    dayInfo: 22
+    characterQuote: "you are the president\nof the country, and \nyou have to run
+      it."
   nextStates:
-    StateQuoteleft: Yes
-    StateQuoteright: No, i do
-    nextState1: {fileID: 11400000, guid: 1eeb7511e7119bc41a2d0d1075bea2fc, type: 2}
-    nextState2: {fileID: 11400000, guid: 21fe4e71b2a92e94b848b5922248bee5, type: 2}
+    StateQuoteleft: What
+    StateQuoteright: What
+    nextState1: {fileID: 11400000, guid: b96800d9f1974944093ff5569199208e, type: 2}
+    nextState2: {fileID: 11400000, guid: b96800d9f1974944093ff5569199208e, type: 2}
   choiceEffects:
     FilledPlant: 0
     FilledHuman: 0

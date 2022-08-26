@@ -3147,7 +3147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &630639324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3374,7 +3374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &690994296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6094,7 +6094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -285, y: 543}
+  m_AnchoredPosition: {x: -32, y: 616}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127055557
@@ -6117,7 +6117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "yes do this and that \n"
+  m_text: "they erased your memory \nagain, didn't they?\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6b55677711c5d943ac025489f037b79, type: 2}
   m_sharedMaterial: {fileID: 3920437341883594422, guid: d6b55677711c5d943ac025489f037b79, type: 2}
@@ -6144,14 +6144,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62
-  m_fontSizeBase: 62
+  m_fontSize: 52.01
+  m_fontSizeBase: 52.01
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6251,7 +6251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Labgirl
+  m_text: '?????
 
 '
   m_isRightToLeft: 0
@@ -6741,7 +6741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1217047400
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10352,7 +10352,7 @@ PrefabInstance:
     - target: {fileID: 8240913958974129967, guid: 50fbcb7d18fe93a4f9b70779cf6529bb, type: 3}
       propertyPath: CDSO
       value: 
-      objectReference: {fileID: 11400000, guid: f8aca2a3f408bed40b11e4309fce2d2f, type: 2}
+      objectReference: {fileID: 11400000, guid: 7bd1535b1672f5f4692d445bb2f17cfb, type: 2}
     - target: {fileID: 8240913958974129967, guid: 50fbcb7d18fe93a4f9b70779cf6529bb, type: 3}
       propertyPath: speed
       value: 0.09

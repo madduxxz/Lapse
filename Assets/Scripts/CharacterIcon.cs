@@ -43,6 +43,11 @@ public class CharacterIcon : MonoBehaviour
     
     public ChoiceDataSO CDSO;
 
+    private float currentFilledPlant = 0;
+    private float currentFilledHuman = 0;
+    private float currentFilledGun = 0;
+    private float currentFilledMoney = 0;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -50,7 +55,7 @@ public class CharacterIcon : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -82,7 +87,7 @@ public class CharacterIcon : MonoBehaviour
     {
         if ((int.Parse(dayInfo.GetParsedText()) / 365 >= 1 ))
         {
-            Debug.Log("isdiir");
+            
             CDSO.choiceLine.yearInfo = int.Parse(yearInfo.GetParsedText());
             yearInfo.SetText((CDSO.choiceLine.yearInfo + 1f).ToString());
             CDSO.choiceLine.dayInfo -= 365;
@@ -102,7 +107,7 @@ public class CharacterIcon : MonoBehaviour
 
         if (rightChoice)
         {
-            CDSO = CDSO.nextStates.nextState1;
+            CDSO = CDSO.nextStates.nextState2;
             choice1.SetText(CDSO.nextStates.StateQuoteleft);
             choice2.SetText(CDSO.nextStates.StateQuoteright);
             characterName.SetText(CDSO.choiceLine.characterName);
@@ -114,13 +119,69 @@ public class CharacterIcon : MonoBehaviour
                 case 1:
                     StartCoroutine(littlePlantFilling(30f));
                     break;
+                case 2:
+                    StartCoroutine(bigPlantFilling(30f));
+                    break;
+                case -1:
+                    StartCoroutine(littlePlantDecreasing(30f));
+                    break;
+                case -2:
+                    StartCoroutine(bigPlantDecreasing(30f));
+                    break;
+
+            }
+
+            switch(CDSO.choiceEffects.FilledHuman)
+            {
+                case 1:
+                    StartCoroutine(littleHumanFilling(30f));
+                    break;
+                case 2:
+                    StartCoroutine(bigHumanFilling(30f));
+                    break;
+                case -1:
+                    StartCoroutine(littleHumanDecreasing(30f));
+                    break;
+                case -2:
+                    StartCoroutine(bigHumanDecreasing(30f));
+                    break;
+            }
+            switch (CDSO.choiceEffects.FilledGun)
+            {
+                case 1:
+                    StartCoroutine(littleGunFilling(30f));
+                    break;
+                case 2:
+                    StartCoroutine(bigGunFilling(30f));
+                    break;
+                case -1:
+                    StartCoroutine(littleGunDecreasing(30f));
+                    break;
+                case -2:
+                    StartCoroutine(bigGunDecreasing(30f));
+                    break;
+            }
+            switch (CDSO.choiceEffects.FilledMoney)
+            {
+                case 1:
+                    StartCoroutine(littleMoneyFilling(30f));
+                    break;
+                case 2:
+                    StartCoroutine(bigMoneyFilling(30f));
+                    break;
+                case -1:
+                    StartCoroutine(littleMoneyDecreasing(30f));
+                    break;
+                case -2:
+                    StartCoroutine(bigMoneyDecreasing(30f));
+                    break;
             }
 
             rightChoice = false;
         }
         if (leftChoice)
         {
-            CDSO = CDSO.nextStates.nextState2;
+            CDSO = CDSO.nextStates.nextState1;
             choice1.SetText(CDSO.nextStates.StateQuoteleft);
             choice2.SetText(CDSO.nextStates.StateQuoteright);
             characterName.SetText(CDSO.choiceLine.characterName);
@@ -135,7 +196,9 @@ public class CharacterIcon : MonoBehaviour
 
     private IEnumerator littlePlantFilling(float duration)
     {
-        for (float i = 0; i <= 0.3f; i += (speed * 0.01f))
+        currentFilledPlant = fillPlant.fillAmount;
+
+        for (float i = currentFilledPlant; i <= currentFilledPlant + 0.3f; i += (speed * 0.01f))
         {
             fillPlant.fillAmount = i;
             fillPlant.color = Color.green;
@@ -143,9 +206,231 @@ public class CharacterIcon : MonoBehaviour
             yield return new WaitForEndOfFrame();
 
         }
+        
 
-        fillPlant.fillAmount = 0.3f;
         fillPlant.color = Color.white;
+
+    }
+    private IEnumerator bigPlantFilling(float duration)
+    {
+        currentFilledPlant = fillPlant.fillAmount;
+        for (float i = currentFilledPlant; i <= currentFilledPlant + 0.5f; i += (speed * 0.01f))
+        {
+            fillPlant.fillAmount = i;
+            fillPlant.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        
+        
+
+        
+        fillPlant.color = Color.white;
+
+    }
+    private IEnumerator littlePlantDecreasing(float duration)
+    {
+        currentFilledPlant = fillPlant.fillAmount;
+
+        for (float i = currentFilledPlant; i >= currentFilledPlant-0.3f; i -= (speed * 0.01f))
+        {
+            fillPlant.fillAmount = i;
+            fillPlant.color = Color.red;
+            yield return new WaitForEndOfFrame();
+        }
+
+        
+        fillPlant.color = Color.white;
+
+    }
+    private IEnumerator bigPlantDecreasing(float duration)
+    {
+        currentFilledPlant = fillPlant.fillAmount;
+
+        for (float i = currentFilledPlant; i >= currentFilledPlant-0.5f; i -= (speed * 0.01f))
+        {
+            fillPlant.fillAmount = i;
+            fillPlant.color = Color.red;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+
+      
+        fillPlant.color = Color.white;
+
+    }
+    private IEnumerator littleHumanFilling(float duration)
+    {
+        currentFilledHuman = fillHuman.fillAmount;
+
+        for (float i = currentFilledHuman; i <= currentFilledHuman + 0.3f; i += (speed * 0.01f))
+        {
+            fillHuman.fillAmount = i;
+            fillHuman.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        
+
+        fillHuman.color = Color.white;
+
+    }
+    private IEnumerator bigHumanFilling(float duration)
+    {
+        currentFilledHuman = fillHuman.fillAmount;
+        for (float i = currentFilledHuman; i <= currentFilledHuman + 0.5f; i += (speed * 0.01f))
+        {
+            fillHuman.fillAmount = i;
+            fillHuman.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+
+        
+
+
+        fillHuman.color = Color.white;
+
+    }
+    private IEnumerator littleHumanDecreasing(float duration)
+    {
+        currentFilledHuman = fillHuman.fillAmount;
+
+        for (float i = currentFilledHuman; i >= currentFilledHuman - 0.3f; i -= (speed * 0.01f))
+        {
+            fillHuman.fillAmount = i;
+            fillHuman.color = Color.red;
+            yield return new WaitForEndOfFrame();
+        }
+
+        
+        fillHuman.color = Color.white;
+
+    }
+    private IEnumerator bigHumanDecreasing(float duration)
+    {
+        currentFilledHuman = fillHuman.fillAmount;
+
+        for (float i = currentFilledHuman; i >= currentFilledHuman - 0.5f; i -= (speed * 0.01f))
+        {
+            fillHuman.fillAmount = i;
+            fillHuman.color = Color.red;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillHuman.color = Color.white;
+    }
+    private IEnumerator littleGunFilling(float duration)
+    {
+        currentFilledGun = fillGun.fillAmount;
+
+        for (float i = currentFilledGun; i <= currentFilledGun + 0.3f; i += (speed * 0.01f))
+        {
+            fillGun.fillAmount = i;
+            fillGun.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillGun.color = Color.white;
+    }
+    private IEnumerator bigGunFilling(float duration)
+    {
+        currentFilledGun = fillGun.fillAmount;
+        for (float i = currentFilledGun; i <= currentFilledGun + 0.5f; i += (speed * 0.01f))
+        {
+            fillGun.fillAmount = i;
+            fillGun.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillGun.color = Color.white;
+    }
+    private IEnumerator littleGunDecreasing(float duration)
+    {
+        currentFilledGun = fillGun.fillAmount;
+
+        for (float i = currentFilledGun; i >= currentFilledGun - 0.3f; i -= (speed * 0.01f))
+        {
+            fillGun.fillAmount = i;
+            fillGun.color = Color.red;
+            yield return new WaitForEndOfFrame();
+        }
+        fillGun.color = Color.white;
+    }
+    private IEnumerator bigGunDecreasing(float duration)
+    {
+        currentFilledGun = fillGun.fillAmount;
+
+        for (float i = currentFilledGun; i >= currentFilledGun - 0.5f; i -= (speed * 0.01f))
+        {
+            fillGun.fillAmount = i;
+            fillGun.color = Color.red;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillGun.color = Color.white;
+
+    }
+    private IEnumerator littleMoneyFilling(float duration)
+    {
+        currentFilledMoney = fillMoney.fillAmount;
+
+        for (float i = currentFilledMoney; i <= currentFilledMoney + 0.3f; i += (speed * 0.01f))
+        {
+            fillMoney.fillAmount = i;
+            fillMoney.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillMoney.color = Color.white;
+    }
+    private IEnumerator bigMoneyFilling(float duration)
+    {
+        currentFilledMoney = fillMoney.fillAmount;
+        for (float i = currentFilledMoney; i <= currentFilledMoney + 0.5f; i += (speed * 0.01f))
+        {
+            fillMoney.fillAmount = i;
+            fillMoney.color = Color.green;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillMoney.color = Color.white;
+    }
+    private IEnumerator littleMoneyDecreasing(float duration)
+    {
+        currentFilledMoney = fillMoney.fillAmount;
+
+        for (float i = currentFilledMoney; i >= currentFilledMoney - 0.3f; i -= (speed * 0.01f))
+        {
+            fillMoney.fillAmount = i;
+            fillMoney.color = Color.red;
+            yield return new WaitForEndOfFrame();
+        }
+        fillMoney.color = Color.white;
+    }
+    private IEnumerator bigMoneyDecreasing(float duration)
+    {
+        currentFilledMoney = fillMoney.fillAmount;
+
+        for (float i = currentFilledMoney; i >= currentFilledMoney - 0.5f; i -= (speed * 0.01f))
+        {
+            fillMoney.fillAmount = i;
+            fillMoney.color = Color.red;
+
+            yield return new WaitForEndOfFrame();
+
+        }
+        fillMoney.color = Color.white;
 
     }
 }
