@@ -10,22 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: StartGame
+  m_Name: Gibson1
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: Gibson
     characterIcon: {fileID: 21300000, guid: 00435e79c077fe0469dc2595bdf14453, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 39
-    characterQuote: 'Mr.President, are you
+    dayInfo: 41
+    characterQuote: 'Radiation in some inhabited
 
-      okay?'
+      suburbs is increasing drastically.
+
+      Should
+      we intervene?'
   nextStates:
-    StateQuoteleft: Yes
-    StateQuoteright: Yes
-    nextState1: {fileID: 11400000, guid: b09773a2f1a1d9b489e213b9b7d5bc4a, type: 2}
-    nextState2: {fileID: 11400000, guid: b09773a2f1a1d9b489e213b9b7d5bc4a, type: 2}
+    StateQuoteleft: Don't let news of this get out
+    StateQuoteright: Evacuate the population
+    nextState1: {fileID: 11400000, guid: ccb85e360391bf2498a2a83ae45d1276, type: 2}
+    nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
   choiceEffects:
     FilledPlant: 0
     FilledHuman: 0
