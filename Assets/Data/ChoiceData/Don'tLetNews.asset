@@ -29,3 +29,8 @@ MonoBehaviour:
     FilledHuman: -1
     FilledGun: 0
     FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
+    moneyDeath: {fileID: 0}

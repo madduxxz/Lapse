@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: Evacuate
+  m_Name: PreGunDeath
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: General Ramsey
     characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 57
-    characterQuote: 'we should invest
+    dayInfo: 59
+    characterQuote: 'We don''t have any
 
-      in army.'
+      arm or army left.'
   nextStates:
-    StateQuoteleft: ....
-    StateQuoteright: ....
-    nextState1: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
-    nextState2: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
+    StateQuoteleft: What...
+    StateQuoteright: What...
+    nextState1: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
+    nextState2: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
   choiceEffects:
     FilledPlant: 0
-    FilledHuman: 1
+    FilledHuman: 0
     FilledGun: 0
     FilledMoney: 0
   gameOver:
     plantDeath: {fileID: 0}
     humanDeath: {fileID: 0}
-    gunDeath: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
+    gunDeath: {fileID: 0}
     moneyDeath: {fileID: 0}

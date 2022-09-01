@@ -8,11 +8,29 @@ public class YearScript : MonoBehaviour
     [SerializeField] private TMP_Text YearText;
     [SerializeField] private GameObject ContinueText;
     [SerializeField] private Button Continue;
+    public static YearScript countUp { get; private set; }
+
+    private void Awake()
+    {
+        if(countUp != null && countUp != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            countUp = this;
+        }
+    }
     void Start()
+    {
+
+        CountUpStarter();
+    }
+    public void CountUpStarter()
     {
         StartCoroutine(CountUpToTarget(2075, 2f));
     }
-    IEnumerator CountUpToTarget(int targetVal, float duration, float delay = 0f, string prefix = "")
+    public IEnumerator CountUpToTarget(int targetVal, float duration, float delay = 0f, string prefix = "")
     {
         
         if (delay > 0)

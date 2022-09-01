@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
-namespace DynamicBox.UIViews {
+
     public class SettingsPanelView : MonoBehaviour
     {
         [Header("Controller")]
@@ -17,11 +17,24 @@ namespace DynamicBox.UIViews {
         [SerializeField] private GameObject progressPanel;
         [SerializeField] private TMP_Text panelText;
         [SerializeField] private GameObject fadeInOut;
-        [SerializeField] private GameObject GameplayScene;
-        [SerializeField] private GameObject PlayingArea;
+        [SerializeField] private GameObject gameplayScene;
+        [SerializeField] private GameObject playingArea;
         [SerializeField] GameObject languagePanel;
         [SerializeField] TMP_Text currentLanguage;
 
+        public static SettingsPanelView Current { get; private set; }
+
+        private void Awake()
+        {
+            if (Current != null && Current != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                Current = this;
+            }
+        }
         public void ShowSettings()
         {
             mainPanel.SetActive(true);
@@ -59,15 +72,11 @@ namespace DynamicBox.UIViews {
         {
             fadeInOut.SetActive(true);
             yield return new WaitForSeconds(1f);
-            GameplayScene.SetActive(true);
-            yield return new WaitForSeconds(4f);
-            PlayingArea.SetActive(true);
-
-
+            gameplayScene.SetActive(true);
             yield return new WaitForSeconds(1f);
             fadeInOut.SetActive(false);
-          
-
+            yield return new WaitForSeconds(3f);
+            playingArea.SetActive(true);
         }
         public void openLanguagePanel()
         { 
@@ -82,6 +91,22 @@ namespace DynamicBox.UIViews {
             SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[index]);
             
         }
+        public IEnumerator Death()
+        {
+            
+            fadeInOut.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            gameplayScene.SetActive(false);
+            YearScript.countUp.CountUpStarter();
+            yield return new WaitForSeconds(1f);
+
+            
+            fadeInOut.SetActive(false);
+        }
+        public void DeathCourtine()
+        {
+            StartCoroutine(Death());
+        }
         //public void settoAz()
         //{
         //    SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[1]);
@@ -93,4 +118,3 @@ namespace DynamicBox.UIViews {
         //    currentLanguage.SetText("Turkish >");
         //}
     }
-}

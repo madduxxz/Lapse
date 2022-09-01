@@ -3374,7 +3374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &690994296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5086,7 +5086,7 @@ GameObject:
   - component: {fileID: 978971060}
   m_Layer: 5
   m_Name: PanelView
-  m_TagString: Untagged
+  m_TagString: View
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5133,8 +5133,8 @@ MonoBehaviour:
   progressPanel: {fileID: 88413194}
   panelText: {fileID: 812055369}
   fadeInOut: {fileID: 836136960}
-  GameplayScene: {fileID: 1217047399}
-  PlayingArea: {fileID: 690994295}
+  gameplayScene: {fileID: 1217047399}
+  playingArea: {fileID: 690994295}
   languagePanel: {fileID: 1588737271}
   currentLanguage: {fileID: 911947832}
 --- !u!1 &983843775
@@ -5937,7 +5937,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 0.001
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -6173,7 +6173,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6309,7 +6309,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6414,7 +6414,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 0.001
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -6763,7 +6763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1217047400
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9271,7 +9271,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 0.001
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -9831,7 +9831,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 0.001
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -10391,6 +10391,10 @@ PrefabInstance:
       propertyPath: CDSO
       value: 
       objectReference: {fileID: 11400000, guid: 7bd1535b1672f5f4692d445bb2f17cfb, type: 2}
+    - target: {fileID: 8240913958974129967, guid: 50fbcb7d18fe93a4f9b70779cf6529bb, type: 3}
+      propertyPath: Death
+      value: 
+      objectReference: {fileID: 11400000, guid: 92eb362a16b81ce45a6d63137f299d75, type: 2}
     - target: {fileID: 8240913958974129967, guid: 50fbcb7d18fe93a4f9b70779cf6529bb, type: 3}
       propertyPath: speed
       value: 0.09

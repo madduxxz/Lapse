@@ -31,6 +31,8 @@ public class CharacterIcon : MonoBehaviour
 
     [SerializeField] private float speed;
 
+    [SerializeField] ChoiceDataSO Death;
+
     private bool rightChoice = false;
 
     private bool leftChoice = false;
@@ -51,7 +53,6 @@ public class CharacterIcon : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        
 
     }
 
@@ -99,9 +100,15 @@ public class CharacterIcon : MonoBehaviour
         anim.SetInteger("IconAnim", 3);
         CDSO.choiceLine.dayInfo = int.Parse(dayInfo.GetParsedText());
         checkYear();
+        checkDeath();
         dayInfo.SetText((CDSO.choiceLine.dayInfo + Random.Range(2, 10)).ToString());
 
-        
+        if (CDSO == Death)
+        {
+            
+            SettingsPanelView.Current.DeathCourtine();
+            
+        }
         
 
 
@@ -113,70 +120,6 @@ public class CharacterIcon : MonoBehaviour
             characterName.SetText(CDSO.choiceLine.characterName);
             characterQuote.SetText(CDSO.choiceLine.characterQuote);
             Child.sprite = CDSO.choiceLine.characterIcon;
-
-            switch (CDSO.choiceEffects.FilledPlant)
-            {
-                case 1:
-                    StartCoroutine(littlePlantFilling(30f));
-                    break;
-                case 2:
-                    StartCoroutine(bigPlantFilling(30f));
-                    break;
-                case -1:
-                    StartCoroutine(littlePlantDecreasing(30f));
-                    break;
-                case -2:
-                    StartCoroutine(bigPlantDecreasing(30f));
-                    break;
-
-            }
-
-            switch(CDSO.choiceEffects.FilledHuman)
-            {
-                case 1:
-                    StartCoroutine(littleHumanFilling(30f));
-                    break;
-                case 2:
-                    StartCoroutine(bigHumanFilling(30f));
-                    break;
-                case -1:
-                    StartCoroutine(littleHumanDecreasing(30f));
-                    break;
-                case -2:
-                    StartCoroutine(bigHumanDecreasing(30f));
-                    break;
-            }
-            switch (CDSO.choiceEffects.FilledGun)
-            {
-                case 1:
-                    StartCoroutine(littleGunFilling(30f));
-                    break;
-                case 2:
-                    StartCoroutine(bigGunFilling(30f));
-                    break;
-                case -1:
-                    StartCoroutine(littleGunDecreasing(30f));
-                    break;
-                case -2:
-                    StartCoroutine(bigGunDecreasing(30f));
-                    break;
-            }
-            switch (CDSO.choiceEffects.FilledMoney)
-            {
-                case 1:
-                    StartCoroutine(littleMoneyFilling(30f));
-                    break;
-                case 2:
-                    StartCoroutine(bigMoneyFilling(30f));
-                    break;
-                case -1:
-                    StartCoroutine(littleMoneyDecreasing(30f));
-                    break;
-                case -2:
-                    StartCoroutine(bigMoneyDecreasing(30f));
-                    break;
-            }
-
             rightChoice = false;
         }
         if (leftChoice)
@@ -189,11 +132,103 @@ public class CharacterIcon : MonoBehaviour
             Child.sprite = CDSO.choiceLine.characterIcon;
             leftChoice = false;
         }
+
+        switch (CDSO.choiceEffects.FilledPlant)
+        {
+            case 1:
+                StartCoroutine(littlePlantFilling(30f));
+                break;
+            case 2:
+                StartCoroutine(bigPlantFilling(30f));
+                break;
+            case -1:
+                StartCoroutine(littlePlantDecreasing(30f));
+                break;
+            case -2:
+                StartCoroutine(bigPlantDecreasing(30f));
+                break;
+
+        }
+
+        switch (CDSO.choiceEffects.FilledHuman)
+        {
+            case 1:
+                StartCoroutine(littleHumanFilling(30f));
+                break;
+            case 2:
+                StartCoroutine(bigHumanFilling(30f));
+                break;
+            case -1:
+                StartCoroutine(littleHumanDecreasing(30f));
+                break;
+            case -2:
+                StartCoroutine(bigHumanDecreasing(30f));
+                break;
+        }
+        switch (CDSO.choiceEffects.FilledGun)
+        {
+            case 1:
+                StartCoroutine(littleGunFilling(30f));
+                break;
+            case 2:
+                StartCoroutine(bigGunFilling(30f));
+                break;
+            case -1:
+                StartCoroutine(littleGunDecreasing(30f));
+                break;
+            case -2:
+                StartCoroutine(bigGunDecreasing(30f));
+                break;
+        }
+        switch (CDSO.choiceEffects.FilledMoney)
+        {
+            case 1:
+                StartCoroutine(littleMoneyFilling(30f));
+                break;
+            case 2:
+                StartCoroutine(bigMoneyFilling(30f));
+                break;
+            case -1:
+                StartCoroutine(littleMoneyDecreasing(30f));
+                break;
+            case -2:
+                StartCoroutine(bigMoneyDecreasing(30f));
+                break;
+        }
+
         
-
-
     }
 
+
+    private void checkDeath()
+    {
+        {
+            if (fillPlant.fillAmount < 0.001)
+            {
+                if(CDSO.gameOver.plantDeath != null)
+                    CDSO = CDSO.gameOver.plantDeath;
+
+            }
+            if (fillHuman.fillAmount < 0.001)
+            {
+                if(CDSO.gameOver.humanDeath != null)
+                CDSO = CDSO.gameOver.humanDeath;
+
+            }
+            if (fillGun.fillAmount < 0.001)
+            {
+                if(CDSO.gameOver.gunDeath != null)
+                CDSO = CDSO.gameOver.gunDeath;
+
+            }
+            if (fillMoney.fillAmount < 0.001)
+            {
+                if(CDSO.gameOver.moneyDeath != null)
+                CDSO = CDSO.gameOver.moneyDeath;
+
+            }
+        }
+    }
     private IEnumerator littlePlantFilling(float duration)
     {
         currentFilledPlant = fillPlant.fillAmount;

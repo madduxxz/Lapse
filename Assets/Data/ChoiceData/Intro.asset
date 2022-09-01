@@ -17,7 +17,7 @@ MonoBehaviour:
     characterIcon: {fileID: 21300000, guid: bad95ccfb8a1ae84984c83c76af87b96, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 0
-    dayInfo: 17
+    dayInfo: 16
     characterQuote: 'i knew it! you don''t
 
       remember anything.'
@@ -31,3 +31,8 @@ MonoBehaviour:
     FilledHuman: 0
     FilledGun: 0
     FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 11400000, guid: 92eb362a16b81ce45a6d63137f299d75, type: 2}
+    moneyDeath: {fileID: 0}
