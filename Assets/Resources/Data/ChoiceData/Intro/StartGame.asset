@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
+  m_Name: StartGame
+  m_EditorClassIdentifier: 
+  choiceLine:
+    characterName: ???
+    characterIcon: {fileID: 21300000, guid: ec3985e86e5dc07409e339123f450c80, type: 3}
+    cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
+    yearInfo: 2075
+    dayInfo: 30
+    characterQuote: 'The entity that was talking
+
+      to you vanishes. You wake
+
+      up
+      in the presidential
+
+      room.'
+  nextStates:
+    StateQuoteleft: 
+    StateQuoteright: 
+    nextState1: {fileID: 11400000, guid: b09773a2f1a1d9b489e213b9b7d5bc4a, type: 2}
+    nextState2: {fileID: 11400000, guid: b09773a2f1a1d9b489e213b9b7d5bc4a, type: 2}
+  choiceEffectsLeft:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  choiceEffectsRight:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 0}
+    moneyDeath: {fileID: 0}

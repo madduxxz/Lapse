@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
+  m_Name: Gibson2
+  m_EditorClassIdentifier: 
+  choiceLine:
+    characterName: Minister of Health Gibson
+    characterIcon: {fileID: 21300000, guid: 00435e79c077fe0469dc2595bdf14453, type: 3}
+    cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
+    yearInfo: 2075
+    dayInfo: 46
+    characterQuote: A
+  nextStates:
+    StateQuoteleft: "Don't let news\n of this get out"
+    StateQuoteright: "Evacuate the \npopulation"
+    nextState1: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+    nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+  choiceEffectsLeft:
+    FilledPlant: -1
+    FilledHuman: 1
+    FilledGun: 0
+    FilledMoney: 0
+  choiceEffectsRight:
+    FilledPlant: 0
+    FilledHuman: 1
+    FilledGun: 0
+    FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}
+    humanDeath: {fileID: 11400000, guid: 608560d2fd04b5745a952cce0951820c, type: 2}
+    gunDeath: {fileID: 11400000, guid: 92eb362a16b81ce45a6d63137f299d75, type: 2}
+    moneyDeath: {fileID: 11400000, guid: 85c77b270ba97f24e932dd8707455e9d, type: 2}

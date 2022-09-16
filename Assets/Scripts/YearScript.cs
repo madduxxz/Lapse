@@ -8,6 +8,7 @@ public class YearScript : MonoBehaviour
     [SerializeField] private TMP_Text YearText;
     [SerializeField] private GameObject ContinueText;
     [SerializeField] private Button Continue;
+    [SerializeField] private TMP_Text yearInfo;
     public static YearScript countUp { get; private set; }
 
     private void Awake()
@@ -28,11 +29,14 @@ public class YearScript : MonoBehaviour
     }
     public void CountUpStarter()
     {
-        StartCoroutine(CountUpToTarget(2075, 2f));
+        JsonReadWriteSystem.Instance.SaveToJson();
+        JsonReadWriteSystem.Instance.LoadFromJson();
+        StartCoroutine(CountUpToTarget(JsonReadWriteSystem.Instance.yearCount, 2f));
     }
     public IEnumerator CountUpToTarget(int targetVal, float duration, float delay = 0f, string prefix = "")
     {
-        
+        ContinueText.SetActive(false);
+        Continue.interactable = false;
         if (delay > 0)
         {
             yield return new WaitForSeconds(delay);

@@ -17,6 +17,7 @@ public class EnableLoadingLogo : MonoBehaviour
     
     void Start()
     {
+        
         anim = TouchText.GetComponent<Animator>();
         StartCoroutine(ButtonEnable());
     }
@@ -40,10 +41,8 @@ public class EnableLoadingLogo : MonoBehaviour
     private IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(2f);
-        asyncLoadScene = SceneManager.LoadSceneAsync("GameplayScene", LoadSceneMode.Additive);
+        asyncLoadScene = SceneManager.LoadSceneAsync("GameplayScene", LoadSceneMode.Single);
         
-        
-
     }
     
     

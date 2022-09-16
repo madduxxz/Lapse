@@ -21,6 +21,10 @@ using UnityEngine.Localization.Settings;
         [SerializeField] private GameObject playingArea;
         [SerializeField] GameObject languagePanel;
         [SerializeField] TMP_Text currentLanguage;
+        [SerializeField] AudioSource ContinueSound;
+        [SerializeField] AudioSource backgroundMusic;
+        [SerializeField] GameObject Music;
+        [SerializeField] GameObject soundEffects;
 
         public static SettingsPanelView Current { get; private set; }
 
@@ -37,31 +41,34 @@ using UnityEngine.Localization.Settings;
         }
         public void ShowSettings()
         {
-            mainPanel.SetActive(true);
-            settingsPanel.SetActive(true);
-            shopPanel.SetActive(false);
-            progressPanel.SetActive(false);
+        ContinueSound.Play();   
+        mainPanel.SetActive(true);  
+        settingsPanel.SetActive(true);
+        shopPanel.SetActive(false);
+        progressPanel.SetActive(false);
             
     }
         public void ShowShop()
         {
-            mainPanel.SetActive(true);
-            settingsPanel.SetActive(false);
-            shopPanel.SetActive(true);
-            progressPanel.SetActive(false);
+        ContinueSound.Play();
+        mainPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+        shopPanel.SetActive(true);
+        progressPanel.SetActive(false);
             
         }
         public void ShowProgress()
         {
-            mainPanel.SetActive(true);
-            settingsPanel.SetActive(false);
-            shopPanel.SetActive(false);
-            progressPanel.SetActive(true);
-            
+        ContinueSound.Play();
+        mainPanel.SetActive(true);  
+        settingsPanel.SetActive(false);
+        shopPanel.SetActive(false);
+        progressPanel.SetActive(true);
         }
         public void ExitButton()
         {
-            mainPanel.SetActive(false);
+        ContinueSound.Play();
+        mainPanel.SetActive(false);
         }
         public void ContinueButton()
         {
@@ -70,17 +77,21 @@ using UnityEngine.Localization.Settings;
         }
         public IEnumerator Continue()
         {
+            ContinueSound.Play();
             fadeInOut.SetActive(true);
             yield return new WaitForSeconds(1f);
             gameplayScene.SetActive(true);
+            backgroundMusic.Play();
             yield return new WaitForSeconds(1f);
             fadeInOut.SetActive(false);
             yield return new WaitForSeconds(3f);
             playingArea.SetActive(true);
         }
+
         public void openLanguagePanel()
-        { 
-            languagePanel.SetActive(!languagePanel.activeInHierarchy);
+        {
+        ContinueSound.Play();
+        languagePanel.SetActive(!languagePanel.activeInHierarchy);
         }
         public void SetSelectedLocale(Locale locale)
         {
@@ -93,7 +104,8 @@ using UnityEngine.Localization.Settings;
         }
         public IEnumerator Death()
         {
-            
+            JsonReadWriteSystem.Instance.SaveToJson();
+            yield return new WaitForSeconds(1f);
             fadeInOut.SetActive(true);
             yield return new WaitForSeconds(1f);
             gameplayScene.SetActive(false);
@@ -107,14 +119,18 @@ using UnityEngine.Localization.Settings;
         {
             StartCoroutine(Death());
         }
-        //public void settoAz()
-        //{
-        //    SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[1]);
-        //    currentLanguage.SetText("Azerbaijani >");
-        //}
-        //public void settoTr()
-        //{
-        //    SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[2]);
-        //    currentLanguage.SetText("Turkish >");
-        //}
+       public void OnClickMusic()
+      {
+        Music.SetActive(!Music.activeInHierarchy);
+        if(gameplayScene.activeInHierarchy)
+        backgroundMusic.Play();
+
+      }
+    public void OnClickSoundeff()
+    {
+        soundEffects.SetActive(!soundEffects.activeInHierarchy);
+
     }
+
+
+}

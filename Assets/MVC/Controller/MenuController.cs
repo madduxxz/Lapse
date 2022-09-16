@@ -7,28 +7,16 @@ public class MenuController : MonoBehaviour
     [SerializeField] private SettingsPanelView view;
 
 
-    private void OnEnable()
-    {
-        EventManager.Instance.AddListener<OnSettingsButtonPressedEvent>(OnSettingsButtonPressHandler);
-        EventManager.Instance.AddListener<OnShopButtonPressedEvent>(OnShopButtonPressHandler);
-        EventManager.Instance.AddListener<OnProgressButtonPressedEvent>(OnProgressButtonPressHandler);
-    }
-    private void OnDisable()
-    {
-        EventManager.Instance.RemoveListener<OnSettingsButtonPressedEvent>(OnSettingsButtonPressHandler);
-        EventManager.Instance.RemoveListener<OnShopButtonPressedEvent>(OnShopButtonPressHandler);
-        EventManager.Instance.RemoveListener<OnProgressButtonPressedEvent>(OnProgressButtonPressHandler);
-    }
-
-    public void OnSettingsButtonPressHandler(OnSettingsButtonPressedEvent eventDetails)
+   
+    public void OnSettingsButtonPressHandler()
     {
         view.ShowSettings();
     }
-    public void OnShopButtonPressHandler(OnShopButtonPressedEvent eventDetails)
+    public void OnShopButtonPressHandler()
     {
         view.ShowShop();
     }
-    public void OnProgressButtonPressHandler(OnProgressButtonPressedEvent eventDetails)
+    public void OnProgressButtonPressHandler()
     {
         view.ShowProgress();
     }

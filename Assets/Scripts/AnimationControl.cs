@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationControl : MonoBehaviour
 {
     private Animation anim;
-    // Start is called before the first frame update
+   
     void Start()
     {
         anim = GetComponent<Animation>();
@@ -13,7 +13,7 @@ public class AnimationControl : MonoBehaviour
         StartCoroutine(PlayAnimInterval(30, 0.1f));
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
        

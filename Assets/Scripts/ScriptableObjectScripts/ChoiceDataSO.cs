@@ -5,7 +5,8 @@ public class ChoiceDataSO : ScriptableObject
 {
     public ChoiceLine choiceLine;
     public ChoiceState nextStates;
-    public EffectsOfChoices choiceEffects;
+    public EffectsOfChoicesLeft choiceEffectsLeft;
+    public EffectsOfChoicesRight choiceEffectsRight;
     public GameOver gameOver;
   
 }
@@ -40,12 +41,21 @@ public class ChoiceState
     public ChoiceDataSO nextState2;
 }
 [System.Serializable]
-public class EffectsOfChoices
+public class EffectsOfChoicesLeft
 {
-    public int FilledPlant;
-    public int FilledHuman;
-    public int FilledGun;
-    public int FilledMoney;
+    public float FilledPlant;
+    public float FilledHuman;
+    public float FilledGun;
+    public float FilledMoney;
+}
+
+[System.Serializable]
+public class EffectsOfChoicesRight
+{
+    public float FilledPlant;
+    public float FilledHuman;
+    public float FilledGun;
+    public float FilledMoney;
 }
 
 [System.Serializable]
