@@ -17,7 +17,7 @@ MonoBehaviour:
     characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 56
+    dayInfo: 58
     characterQuote: 'The ongoing war agaisnt the
 
       eastern countries has brought
@@ -29,17 +29,17 @@ MonoBehaviour:
 
       information'
     StateQuoteright: Be kind
-    nextState1: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
-    nextState2: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
+    nextState1: {fileID: 11400000, guid: fe1c1355ca9e5e540a55c5d181038e25, type: 2}
+    nextState2: {fileID: 11400000, guid: e72e214cce7898a4eba2723b8743933c, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: -1
-    FilledGun: 2
+    FilledHuman: -0.2
+    FilledGun: 0.2
     FilledMoney: 0
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: 1
-    FilledGun: -1
+    FilledHuman: 0.1
+    FilledGun: -0.1
     FilledMoney: 0
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}

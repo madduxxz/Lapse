@@ -18,19 +18,19 @@ MonoBehaviour:
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 51
-    characterQuote: 'The governtment falls into the
+    characterQuote: 'Your head is sold to enemy
 
-      enemy''s hands. You are
-      captured
+      countries and the government,
 
-      and executed along with what
+      passes
+      into their politicians''
 
-      remains of your army.'
+      hands.'
   nextStates:
     StateQuoteleft: 
     StateQuoteright: 
-    nextState1: {fileID: 0}
-    nextState2: {fileID: 0}
+    nextState1: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
+    nextState2: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
     FilledHuman: 0

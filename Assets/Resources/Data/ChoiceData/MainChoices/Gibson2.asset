@@ -18,22 +18,29 @@ MonoBehaviour:
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 46
-    characterQuote: A
+    characterQuote: 'A serious plague has broken out in
+
+      one of our cities.
+      Doctors say it
+
+      could be contagious.'
   nextStates:
-    StateQuoteleft: "Don't let news\n of this get out"
-    StateQuoteright: "Evacuate the \npopulation"
-    nextState1: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+    StateQuoteleft: Close the area
+    StateQuoteright: 'Treat the
+
+      population'
+    nextState1: {fileID: 11400000, guid: 8efe390267aec14468cf4f0374fcae93, type: 2}
     nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
   choiceEffectsLeft:
-    FilledPlant: -1
-    FilledHuman: 1
+    FilledPlant: -0.3
+    FilledHuman: -0.2
     FilledGun: 0
     FilledMoney: 0
   choiceEffectsRight:
-    FilledPlant: 0
-    FilledHuman: 1
+    FilledPlant: -0.1
+    FilledHuman: 0.4
     FilledGun: 0
-    FilledMoney: 0
+    FilledMoney: -0.3
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}
     humanDeath: {fileID: 11400000, guid: 608560d2fd04b5745a952cce0951820c, type: 2}

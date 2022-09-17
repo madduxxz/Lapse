@@ -17,13 +17,9 @@ MonoBehaviour:
     characterIcon: {fileID: 21300000, guid: 00435e79c077fe0469dc2595bdf14453, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 30
-    characterQuote: 'Radiation in some inhabited
-
-      suburbs is increasing drastically.
-
-      Should
-      we intervene?'
+    dayInfo: 33
+    characterQuote: "Radiation in some inhabited \nsuburbs is increasing \ndrastically.
+      Should we intervene?"
   nextStates:
     StateQuoteleft: "Don't let news\n of this get out"
     StateQuoteright: "Evacuate the \npopulation"

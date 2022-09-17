@@ -18,32 +18,22 @@ MonoBehaviour:
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 55
-    characterQuote: 'I know of some spas in the north
-
-      of the country that
-      were cloes
-
-      during the war. Put them back
-
-      on track, and the country
-      will
-
-      benefit.'
+    characterQuote: Red blouse or blue blouse?
   nextStates:
-    StateQuoteleft: No
-    StateQuoteright: Yes
-    nextState1: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
-    nextState2: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
+    StateQuoteleft: Blue, obviously!
+    StateQuoteright: Red, it's the best color!
+    nextState1: {fileID: 11400000, guid: 4867d509dd54a14449649d5132617ae0, type: 2}
+    nextState2: {fileID: 11400000, guid: 4867d509dd54a14449649d5132617ae0, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: -1
+    FilledHuman: 0
     FilledGun: 0
-    FilledMoney: 1
+    FilledMoney: 0
   choiceEffectsRight:
-    FilledPlant: 1
-    FilledHuman: 1
+    FilledPlant: 0
+    FilledHuman: 0
     FilledGun: 0
-    FilledMoney: -1
+    FilledMoney: 0
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}
     humanDeath: {fileID: 11400000, guid: 608560d2fd04b5745a952cce0951820c, type: 2}

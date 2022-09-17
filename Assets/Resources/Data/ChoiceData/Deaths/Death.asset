@@ -14,18 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: 
-    characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
-    cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
-    yearInfo: 2075
-    dayInfo: 65
-    characterQuote: 'We don''t have any
-
-      arm or army left.'
+    characterIcon: {fileID: 0}
+    cardNoise: {fileID: 0}
+    yearInfo: 0
+    dayInfo: 0
+    characterQuote: 
   nextStates:
-    StateQuoteleft: What...
-    StateQuoteright: What...
-    nextState1: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
-    nextState2: {fileID: 11400000, guid: 9cd8679de76700b4e825b4e9c39b71ff, type: 2}
+    StateQuoteleft: 
+    StateQuoteright: 
+    nextState1: {fileID: 11400000}
+    nextState2: {fileID: 11400000}
   choiceEffectsLeft:
     FilledPlant: 0
     FilledHuman: 0

@@ -27,16 +27,16 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: It's for security
     StateQuoteright: I'll talk to him
-    nextState1: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
-    nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+    nextState1: {fileID: 11400000, guid: e72e214cce7898a4eba2723b8743933c, type: 2}
+    nextState2: {fileID: 11400000, guid: a9197ac7ed86437439135a24027fdadf, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: -1
-    FilledGun: 1
+    FilledHuman: -0.1
+    FilledGun: 0.1
     FilledMoney: 0
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: 1
+    FilledHuman: 0.1
     FilledGun: 0
     FilledMoney: 0
   gameOver:

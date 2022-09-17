@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 282, y: 380}
+  m_AnchoredPosition: {x: 257, y: 380}
   m_SizeDelta: {x: -700, y: -850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8239594128276272638
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 32
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -317, y: 380}
+  m_AnchoredPosition: {x: -279, y: 380}
   m_SizeDelta: {x: -700, y: -850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8239594128737628475
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 32
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -415,6 +415,8 @@ MonoBehaviour:
   fillGun: {fileID: 0}
   fillMoney: {fileID: 0}
   speed: 0
+  paperSound: {fileID: 0}
+  Death: {fileID: 0}
   CDSO: {fileID: 11400000, guid: 1eeb7511e7119bc41a2d0d1075bea2fc, type: 2}
 --- !u!222 &8164427686575851224
 CanvasRenderer:

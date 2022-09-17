@@ -13,19 +13,22 @@ MonoBehaviour:
   m_Name: PreMoneyDeath
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: General Ramsey
-    characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
+    characterName: Vice Presdient Orville
+    characterIcon: {fileID: 21300000, guid: 67b5464f81937d64ea4a4fd4ba106ccd, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 43
-    characterQuote: 'We don''t have any
+    characterQuote: 'Mr. President, our state is poor
 
-      arm or army left.'
+      and we are overwhelmed
+      by debts
+
+      with foreign countries.'
   nextStates:
     StateQuoteleft: What...
     StateQuoteright: What...
-    nextState1: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
-    nextState2: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
+    nextState1: {fileID: 11400000, guid: 9c8b2e79494a3bd46834b2121a7c3c5a, type: 2}
+    nextState2: {fileID: 11400000, guid: 9c8b2e79494a3bd46834b2121a7c3c5a, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
     FilledHuman: 0

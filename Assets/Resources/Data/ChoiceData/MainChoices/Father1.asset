@@ -17,7 +17,7 @@ MonoBehaviour:
     characterIcon: {fileID: 21300000, guid: 619df284f9dada94a8b588dfdfbc8ce2, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 55
+    dayInfo: 42
     characterQuote: 'This country needs some places to
 
       pray. We should invest
@@ -30,17 +30,17 @@ MonoBehaviour:
     StateQuoteleft: Yes
     StateQuoteright: No
     nextState1: {fileID: 11400000, guid: a9197ac7ed86437439135a24027fdadf, type: 2}
-    nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+    nextState2: {fileID: 11400000, guid: ca2b2b5a997bbdf4ebee24e419e99f25, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: 1
+    FilledHuman: 0.3
     FilledGun: 0
-    FilledMoney: -1
+    FilledMoney: -0.1
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: -1
+    FilledHuman: -0.2
     FilledGun: 0
-    FilledMoney: 1
+    FilledMoney: 0.2
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}
     humanDeath: {fileID: 11400000, guid: 608560d2fd04b5745a952cce0951820c, type: 2}

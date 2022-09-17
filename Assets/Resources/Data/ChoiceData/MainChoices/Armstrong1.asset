@@ -29,7 +29,7 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: Let them stay
     StateQuoteright: Send them away
-    nextState1: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
+    nextState1: {fileID: 11400000, guid: 2b96de48639a35540a0158e9d15f563f, type: 2}
     nextState2: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
   choiceEffectsLeft:
     FilledPlant: -0.2

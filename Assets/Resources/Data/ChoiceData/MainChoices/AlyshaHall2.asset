@@ -10,36 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: Army4
+  m_Name: AlyshaHall2
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: General Ramsey
-    characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
+    characterName: Ms.Alysha Hall
+    characterIcon: {fileID: 21300000, guid: 837a5a53411df2f48a7151c3cac04a2f, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 56
-    characterQuote: 'The ongoing war agaisnt the
+    dayInfo: 58
+    characterQuote: 'Next month there is an opening of
 
-      eastern countries has brought
+      a great art exhibition.
+      we could
 
-      us
-      some prisoners.'
+      join.'
   nextStates:
-    StateQuoteleft: 'We need
-
-      information'
-    StateQuoteright: Be kind
-    nextState1: {fileID: 11400000, guid: 1e90b141655691448b1c7a51623fac22, type: 2}
-    nextState2: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
+    StateQuoteleft: Yes
+    StateQuoteright: No
+    nextState1: {fileID: 11400000, guid: 2c5f516e260164d499eca34789fa77eb, type: 2}
+    nextState2: {fileID: 11400000, guid: 406232119c2147543b25dedcc6e83fd3, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: -0.2
-    FilledGun: 0.2
+    FilledHuman: 0
+    FilledGun: 0
     FilledMoney: 0
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: 0.2
-    FilledGun: -0.2
+    FilledHuman: 0.1
+    FilledGun: 0.1
     FilledMoney: 0
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}

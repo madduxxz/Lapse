@@ -25,7 +25,7 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: There's no need
     StateQuoteright: We'll do it
-    nextState1: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
+    nextState1: {fileID: 11400000, guid: 6f4fa62bcc497b144b945424aa9b2742, type: 2}
     nextState2: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0

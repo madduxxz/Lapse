@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: PrePlantDeath
+  m_Name: PrePlantDeath 1
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: Researcher Kumiyo
@@ -29,8 +29,8 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: What...
     StateQuoteright: What...
-    nextState1: {fileID: 11400000, guid: 02bb6ca98a9be0344b18cc90e658cfb4, type: 2}
-    nextState2: {fileID: 11400000, guid: 02bb6ca98a9be0344b18cc90e658cfb4, type: 2}
+    nextState1: {fileID: 11400000, guid: 9e8dc5bfb4f5389489b0f4aab1d541dc, type: 2}
+    nextState2: {fileID: 11400000, guid: 9e8dc5bfb4f5389489b0f4aab1d541dc, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
     FilledHuman: 0

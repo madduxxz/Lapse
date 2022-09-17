@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
-  m_Name: RKumiyo1 1
+  m_Name: RKumiyo1
   m_EditorClassIdentifier: 
   choiceLine:
     characterName: Researcher Kumiyo
@@ -23,16 +23,16 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: Keep working!
     StateQuoteright: Good job!
-    nextState1: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
+    nextState1: {fileID: 11400000, guid: 82c13aacb1c58e747a4ecb267d04bb49, type: 2}
     nextState2: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: 1
+    FilledHuman: 0.3
     FilledGun: 0
     FilledMoney: 0
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: 1
+    FilledHuman: 0.3
     FilledGun: 0
     FilledMoney: 0
   gameOver:

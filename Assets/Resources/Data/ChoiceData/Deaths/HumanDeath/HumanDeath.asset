@@ -18,19 +18,17 @@ MonoBehaviour:
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 51
-    characterQuote: 'The governtment falls into the
+    characterQuote: 'Following a fierce revolt, you are
 
-      enemy''s hands. You are
-      captured
+      captured and executed
+      publicly.
 
-      and executed along with what
-
-      remains of your army.'
+      Your body hangs upside down.'
   nextStates:
     StateQuoteleft: 
     StateQuoteright: 
-    nextState1: {fileID: 0}
-    nextState2: {fileID: 0}
+    nextState1: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
+    nextState2: {fileID: 11400000, guid: 9d9d0e2e2e4fffe48b1e6c92574a6f03, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
     FilledHuman: 0

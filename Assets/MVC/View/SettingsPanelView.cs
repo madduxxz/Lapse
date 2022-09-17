@@ -25,8 +25,11 @@ using UnityEngine.Localization.Settings;
         [SerializeField] AudioSource backgroundMusic;
         [SerializeField] GameObject Music;
         [SerializeField] GameObject soundEffects;
+    [SerializeField] AudioSource ButtonSound1;
+    [SerializeField] AudioSource ButtonSound2;
 
-        public static SettingsPanelView Current { get; private set; }
+
+    public static SettingsPanelView Current { get; private set; }
 
         private void Awake()
         {
@@ -41,7 +44,7 @@ using UnityEngine.Localization.Settings;
         }
         public void ShowSettings()
         {
-        ContinueSound.Play();   
+        ButtonSound1.Play();   
         mainPanel.SetActive(true);  
         settingsPanel.SetActive(true);
         shopPanel.SetActive(false);
@@ -50,7 +53,7 @@ using UnityEngine.Localization.Settings;
     }
         public void ShowShop()
         {
-        ContinueSound.Play();
+        ButtonSound1.Play();
         mainPanel.SetActive(true);
         settingsPanel.SetActive(false);
         shopPanel.SetActive(true);
@@ -59,7 +62,7 @@ using UnityEngine.Localization.Settings;
         }
         public void ShowProgress()
         {
-        ContinueSound.Play();
+        ButtonSound1.Play();
         mainPanel.SetActive(true);  
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
@@ -67,7 +70,7 @@ using UnityEngine.Localization.Settings;
         }
         public void ExitButton()
         {
-        ContinueSound.Play();
+        ButtonSound2.Play();
         mainPanel.SetActive(false);
         }
         public void ContinueButton()
@@ -90,7 +93,7 @@ using UnityEngine.Localization.Settings;
 
         public void openLanguagePanel()
         {
-        ContinueSound.Play();
+        ButtonSound1.Play();
         languagePanel.SetActive(!languagePanel.activeInHierarchy);
         }
         public void SetSelectedLocale(Locale locale)

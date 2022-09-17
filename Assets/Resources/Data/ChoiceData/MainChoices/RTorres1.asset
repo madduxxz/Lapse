@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RTorres1
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: General Ramsey
-    characterIcon: {fileID: 21300000, guid: 206b07d0d8c4e5b4090e800d7592867b, type: 3}
+    characterName: Researcher Kumiyo
+    characterIcon: {fileID: 21300000, guid: 4c83f117da531a849a8d28f5e3b1efc3, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 55
@@ -27,7 +27,7 @@ MonoBehaviour:
 
       there.'
   nextStates:
-    StateQuoteleft: It does not matter
+    StateQuoteleft: It doesn't matter
     StateQuoteright: Governor!
     nextState1: {fileID: 11400000, guid: bcd604f89b34e644b98d9b2520bab7f4, type: 2}
     nextState2: {fileID: 11400000, guid: 295bd719e3aeac94d942e2e40a8af2c2, type: 2}

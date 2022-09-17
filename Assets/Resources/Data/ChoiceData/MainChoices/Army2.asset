@@ -27,17 +27,17 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: Yes
     StateQuoteright: No
-    nextState1: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
-    nextState2: {fileID: 11400000, guid: 4e6dbfa896b46fb4cb8345a5e6a96849, type: 2}
+    nextState1: {fileID: 11400000, guid: 406232119c2147543b25dedcc6e83fd3, type: 2}
+    nextState2: {fileID: 11400000, guid: d43d6e3dc013aa64887e7d19596160fc, type: 2}
   choiceEffectsLeft:
     FilledPlant: 0
-    FilledHuman: -1
-    FilledGun: 1
+    FilledHuman: -0.1
+    FilledGun: 0.2
     FilledMoney: 0
   choiceEffectsRight:
     FilledPlant: 0
-    FilledHuman: 1
-    FilledGun: -1
+    FilledHuman: 0.2
+    FilledGun: -0.1
     FilledMoney: 0
   gameOver:
     plantDeath: {fileID: 11400000, guid: f800666460a45d04f8408dc58728c039, type: 2}
