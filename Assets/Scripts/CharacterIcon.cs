@@ -34,6 +34,9 @@ public class CharacterIcon : MonoBehaviour
     [SerializeField] private AudioSource paperSound;
 
     [SerializeField] ChoiceDataSO Death;
+    [SerializeField] ChoiceDataSO RickNMorty;
+
+    [SerializeField] GameObject deathCrystal;
 
     private bool rightChoice = false;
 
@@ -91,7 +94,7 @@ public class CharacterIcon : MonoBehaviour
         oppacity2 = RT.anchoredPosition.x / 150;
         choice2.color = new Color(1f, 1f, 1f, oppacity2);
 
-
+        
 
 
     }
@@ -112,14 +115,23 @@ public class CharacterIcon : MonoBehaviour
         if ((int.Parse(dayInfo.GetParsedText()) / 365 >= 1))
         {
 
-            CDSO.choiceLine.yearInfo = JsonReadWriteSystem.Instance.yearCount;
+            CDSO.choiceLine.yearInfo =int.Parse(yearInfo.GetParsedText());
             yearInfo.SetText((CDSO.choiceLine.yearInfo + 1f).ToString());
-            JsonReadWriteSystem.Instance.yearCount++;
+            ;
             CDSO.choiceLine.dayInfo -= 365;
         }
     }
     private IEnumerator DeactiveAndReactivate()
     {
+        if (CDSO.choiceLine.characterName == "???")
+        {
+            SettingsPanelView.Current.ChangeToPast();
+        }
+        if(CDSO.choiceLine.yearInfo == 1)
+        {
+            deathCrystal.SetActive(true);
+        }
+
         yield return new WaitForSeconds(1.5f);
         anim.SetInteger("IconAnim", 3);
         CDSO.choiceLine.dayInfo = int.Parse(dayInfo.GetParsedText());
@@ -177,11 +189,12 @@ public class CharacterIcon : MonoBehaviour
             
         }
 
-
+        
 
 
     }
 
+        
 
 
     private IEnumerator EndGame()
@@ -316,7 +329,7 @@ public class CharacterIcon : MonoBehaviour
         currentFilledHuman = fillHuman.fillAmount;
         if (change > 0)
         {
-            for (float i = currentFilledHuman; i <= currentFilledHuman + change; i += (speed * 0.014f))
+            for (float i = currentFilledHuman; i <= currentFilledHuman + change; i += (speed * 0.014f ))
             {
                 fillHuman.fillAmount = i;
                 fillHuman.color = Color.green;
@@ -327,7 +340,7 @@ public class CharacterIcon : MonoBehaviour
         }
         if (change < 0)
         {
-            for (float i = currentFilledHuman; i >= currentFilledHuman + change; i -= (speed * 0.014f))
+            for (float i = currentFilledHuman; i >= currentFilledHuman + change; i -= (speed * 0.014f ))
             {
                 fillHuman.fillAmount = i;
                 fillHuman.color = Color.red;
@@ -354,7 +367,7 @@ public class CharacterIcon : MonoBehaviour
         }
         if (change < 0)
         {
-            for (float i = currentFilledGun; i >= currentFilledGun + change; i -= (speed * 0.014f))
+            for (float i = currentFilledGun; i >= currentFilledGun + change; i -= (speed * 0.014f ))
             {
                 fillGun.fillAmount = i;
                 fillGun.color = Color.red;
@@ -381,7 +394,7 @@ public class CharacterIcon : MonoBehaviour
         }
         if (change < 0)
         {
-            for (float i = currentFilledMoney; i >= currentFilledMoney + change; i -= (speed * 0.014f))
+            for (float i = currentFilledMoney; i >= currentFilledMoney + change; i -= (speed * 0.014f ))
             {
                 fillMoney.fillAmount = i;
                 fillMoney.color = Color.red;

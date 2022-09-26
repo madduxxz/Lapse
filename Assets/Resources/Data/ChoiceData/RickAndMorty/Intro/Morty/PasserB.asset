@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
+  m_Name: PasserB
+  m_EditorClassIdentifier: 
+  choiceLine:
+    characterName: Rick
+    characterIcon: {fileID: 21300000, guid: 77df490a427efda4681cc3429ec9fc40, type: 3}
+    cardNoise: {fileID: 0}
+    yearInfo: 0
+    dayInfo: 0
+    characterQuote: 'Okay Mo*burp*ty i fixed
+
+      the portal gun, lets get out
+
+      of
+      here. This guy has to run
+
+      the Citadel. Good luck with that.'
+  nextStates:
+    StateQuoteleft: .....
+    StateQuoteright: the Citadel?
+    nextState1: {fileID: 11400000, guid: b031a85fb76994a4b9b70d60fdf54407, type: 2}
+    nextState2: {fileID: 11400000, guid: b031a85fb76994a4b9b70d60fdf54407, type: 2}
+  choiceEffectsLeft:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  choiceEffectsRight:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 0}
+    moneyDeath: {fileID: 0}

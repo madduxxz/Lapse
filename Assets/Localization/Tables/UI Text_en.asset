@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 89588719616
-    m_Localized: ' Game version                   1.0.0'
+    m_Localized: ' Game version          1.0.0'
     m_Metadata:
       m_Items: []
   - m_Id: 326617227264
@@ -40,6 +40,78 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 78919200989184
     m_Localized: 'English > '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816116232773632
+    m_Localized: Active effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816792681734144
+    m_Localized: Task Force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10817514643087360
+    m_Localized: "this active effect gives \nyou the ability \nto tackle extreme
+      events \nwithin the country."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818341789196288
+    m_Localized: 'You have: x0'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818827120500736
+    m_Localized: Heart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10819005730742272
+    m_Localized: "Surviving is never a bad\nthing. With this, you \ncan escape from
+      a \npremature death."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10831417552887808
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832134208446464
+    m_Localized: 'No items, no constructions,
+
+      no active effects.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832783386042368
+    m_Localized: Oracle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10833694221099008
+    m_Localized: "Each choice has,\nconsequences. With this\ngift, your mind will
+      be \nable to see them."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854030404706304
+    m_Localized: Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854494487666688
+    m_Localized: Characters                     >
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854914622709760
+    m_Localized: Storyline goals                >
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10855576148336640
+    m_Localized: HIGH SCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10856008094539776
+    m_Localized: 'In power for
+
+      349 days (Year 2079)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10895480639152128
+    m_Localized: "*Changing language doesn't \naffect the gameplay language\nfor
+      now.*\n"
     m_Metadata:
       m_Items: []
   references:

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
+  m_Name: Morty 2
+  m_EditorClassIdentifier: 
+  choiceLine:
+    characterName: Morty
+    characterIcon: {fileID: 21300000, guid: b42c64b387121c64dbc4c715deca1868, type: 3}
+    cardNoise: {fileID: 0}
+    yearInfo: 0
+    dayInfo: 51
+    characterQuote: "geez, you don't have to \nbust my b*lls you know, \njust trying
+      to help you."
+  nextStates:
+    StateQuoteleft: Sorry
+    StateQuoteright: 'It''s your fault
+
+      you know'
+    nextState1: {fileID: 11400000, guid: e40a2add01360134c999a05c1d5b2b60, type: 2}
+    nextState2: {fileID: 11400000, guid: 08263840670b6a94ca91aaf08a1beb8c, type: 2}
+  choiceEffectsLeft:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  choiceEffectsRight:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 0}
+    moneyDeath: {fileID: 0}

@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: StartGame
   m_EditorClassIdentifier: 
   choiceLine:
-    characterName: ???
+    characterName: ?????
     characterIcon: {fileID: 21300000, guid: ec3985e86e5dc07409e339123f450c80, type: 3}
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
-    dayInfo: 30
+    dayInfo: 27
     characterQuote: 'The entity that was talking
 
       to you vanishes. You wake
 
       up
-      in the presidential
-
-      room.'
+      in the presidential room.'
   nextStates:
     StateQuoteleft: 
     StateQuoteright: 

@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 89588719616
-    m_Localized: Oyun versiyonu                   1.0.0
+    m_Localized: Oyun versiyonu          1.0.0
     m_Metadata:
       m_Items: []
   - m_Id: 326617227264
@@ -40,6 +40,73 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 78919200989184
     m_Localized: 'Turkish > '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816116232773632
+    m_Localized: Aktif effektler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816792681734144
+    m_Localized: "\xD6zel Tim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10817514643087360
+    m_Localized: "bu aktif effekt\n\xFClkedeki isyanlara\nkar\u015F\u0131 kullan\u0131l\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818341789196288
+    m_Localized: 'var: x0'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818827120500736
+    m_Localized: Kalp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10819005730742272
+    m_Localized: "Ya\u015Famak hi\xE7 bir zaman\nk\xF6t\xFC bir \u015Fey de\u011Fildir.\nBununla
+      \xF6l\xFCmden \nka\xE7a bilirsin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10831417552887808
+    m_Localized: "D\xFCkkan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832134208446464
+    m_Localized: "hi\xE7 bir aktif effekt ve\nya e\u015Fya yok."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832783386042368
+    m_Localized: Kahin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10833694221099008
+    m_Localized: "b\xFCt\xFCn se\xE7eneklerin\nbir sonucu vard\u0131r.\nBununla o
+      sonu\xE7lar\u0131\ng\xF6re biliyorsun."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854030404706304
+    m_Localized: "\u0130lerleme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854494487666688
+    m_Localized: Karakterler                     >
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854914622709760
+    m_Localized: Hikaye hedefleri               >
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10855576148336640
+    m_Localized: "Y\xDCKSEK SKOR"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10856008094539776
+    m_Localized: "349 g\xFCnd\xFCr\nidarede(Y\u0131l 2079)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10895480639152128
+    m_Localized: "*Dili de\u011Fi\u015Ftirmek \u015Fu anl\u0131k\noynan\u0131\u015F
+      dilini de\u011Fi\u015Ftirme-\n-mektedir*"
     m_Metadata:
       m_Items: []
   references:

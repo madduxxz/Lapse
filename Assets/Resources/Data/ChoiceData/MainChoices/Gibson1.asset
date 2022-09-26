@@ -23,8 +23,8 @@ MonoBehaviour:
   nextStates:
     StateQuoteleft: "Don't let news\n of this get out"
     StateQuoteright: "Evacuate the \npopulation"
-    nextState1: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
-    nextState2: {fileID: 11400000, guid: bda208b9f7c23594dbc9080936a852fc, type: 2}
+    nextState1: {fileID: 11400000, guid: 48e4ec718522fce4eb48c7e115c6b618, type: 2}
+    nextState2: {fileID: 11400000, guid: 48e4ec718522fce4eb48c7e115c6b618, type: 2}
   choiceEffectsLeft:
     FilledPlant: -0.3
     FilledHuman: -0.1

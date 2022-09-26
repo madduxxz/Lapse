@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be7e8e4cb99c4f802ad3a3109c6be, type: 3}
+  m_Name: Rick-c137 5
+  m_EditorClassIdentifier: 
+  choiceLine:
+    characterName: Rick C-137
+    characterIcon: {fileID: 21300000, guid: d6907de33da726248883b34529ec5624, type: 3}
+    cardNoise: {fileID: 0}
+    yearInfo: 0
+    dayInfo: 33
+    characterQuote: "Who creates this kind of lame game \nand who plays it is the
+      second mind-\nboggling question because it SUCKS. \nYes i am talking about
+      you!"
+  nextStates:
+    StateQuoteleft: No it is not!
+    StateQuoteright: 'Yeah... maybe
+
+      a little'
+    nextState1: {fileID: 11400000, guid: fad67a7a4de6ad448869cef6558b16f9, type: 2}
+    nextState2: {fileID: 11400000, guid: fad67a7a4de6ad448869cef6558b16f9, type: 2}
+  choiceEffectsLeft:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  choiceEffectsRight:
+    FilledPlant: 0
+    FilledHuman: 0
+    FilledGun: 0
+    FilledMoney: 0
+  gameOver:
+    plantDeath: {fileID: 0}
+    humanDeath: {fileID: 0}
+    gunDeath: {fileID: 0}
+    moneyDeath: {fileID: 0}

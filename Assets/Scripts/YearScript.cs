@@ -29,9 +29,8 @@ public class YearScript : MonoBehaviour
     }
     public void CountUpStarter()
     {
-        JsonReadWriteSystem.Instance.SaveToJson();
-        JsonReadWriteSystem.Instance.LoadFromJson();
-        StartCoroutine(CountUpToTarget(JsonReadWriteSystem.Instance.yearCount, 2f));
+        
+        StartCoroutine(CountUpToTarget(2075, 2f));
     }
     public IEnumerator CountUpToTarget(int targetVal, float duration, float delay = 0f, string prefix = "")
     {
@@ -61,4 +60,6 @@ public class YearScript : MonoBehaviour
         Continue.interactable = true;
 
     }
+    
+    
 }

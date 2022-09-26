@@ -18,14 +18,8 @@ MonoBehaviour:
     cardNoise: {fileID: 8300000, guid: 4d8930383ddf59e4a8eed9923786456b, type: 3}
     yearInfo: 2075
     dayInfo: 58
-    characterQuote: 'Honey, i don''t like this new
-
-      researcher, Kumiyo. She
-      always
-
-      talks about fantasy experiments
-
-      and time travel.'
+    characterQuote: "Honey, i don't like this new researcher, \nKumiyo. She always
+      talks about fantasy \nexperiments and time travel."
   nextStates:
     StateQuoteleft: It's her job
     StateQuoteright: You're right

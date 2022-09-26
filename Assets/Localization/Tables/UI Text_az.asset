@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 89588719616
-    m_Localized: "Oyun versiyas\u0131                  1.0.0"
+    m_Localized: "Oyun versiyas\u0131          1.0.0"
     m_Metadata:
       m_Items: []
   - m_Id: 326617227264
@@ -40,6 +40,74 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 78919200989184
     m_Localized: Azerbaijani >
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816116232773632
+    m_Localized: "Aktiv effektl\u0259r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10816792681734144
+    m_Localized: "X\xFCsusi T\u0259yinatl\u0131 Q\xFCvv\u0259l\u0259r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10817514643087360
+    m_Localized: "bu aktiv effekt\n\xF6lk\u0259d\u0259ki \xFCsyanlar\u0131\nyat\u0131\u015Fd\u0131rmaq
+      \xFC\xE7\xFCnd\xFCr."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818341789196288
+    m_Localized: 'var: x0'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10818827120500736
+    m_Localized: Can
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10819005730742272
+    m_Localized: "Ya\u015Famaq he\xE7 bir \nzaman pis bir \u015Fey \ndeyil. Bununla
+      \n\xF6l\xFCmd\u0259nqa\xE7a bil\u0259rs\u0259n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10831417552887808
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832134208446464
+    m_Localized: "he\xE7 bir aktiv effekt v\u0259\nya \u0259\u015Fya yoxdur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10832783386042368
+    m_Localized: Kahin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10833694221099008
+    m_Localized: "h\u0259r bir se\xE7imin bir\nn\u0259tic\u0259si vard\u0131r.\nBunun
+      k\xF6m\u0259yi il\u0259 o \nn\u0259tic\u0259l\u0259ri g\xF6r\u0259 bilirs\u0259n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854030404706304
+    m_Localized: "\u0130l\u0259rl\u0259m\u0259"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854494487666688
+    m_Localized: "Xarakterl\u0259r                     >"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10854914622709760
+    m_Localized: "Hekay\u0259 h\u0259d\u0259fl\u0259ri               >"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10855576148336640
+    m_Localized: "Y\xDCKS\u018FK XAL"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10856008094539776
+    m_Localized: "349 g\xFCn boyu\nidar\u0259d\u0259(\u0130l 2079)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10895480639152128
+    m_Localized: "*Dili d\u0259yi\u015Fdirm\u0259k oynan\u0131\u015F\ndilin\u0259
+      t\u0259sir etmir*(H\u0259l\u0259lik)"
     m_Metadata:
       m_Items: []
   references:
